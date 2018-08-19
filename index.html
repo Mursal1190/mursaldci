@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Danke</title>
+    <style>
+        
+      div  h3{ color: cyan; background-color:rgba(0, 0, 0, 0.5); width: 240px; padding: 10px; text-align: center; font-style: oblique}
+        body {
+            background-image: url("background-imag.jpg");
+        }
+
+        div p {
+            padding: 0px;
+            margin: 0px;
+            width: 300px;
+            height: 300px
+        }
+
+        div img {
+            padding: 0px;
+            margin: 0px;
+            width: 300px;
+            height: 300px;
+            border-radius: 60px;
+        }
+
+        a {
+            background-color: white;
+            color: black;
+            border-style: solid;
+            border-width: 5px;
+            border-color: black;
+            text-decoration: none
+        }
+
+        #myDIV {
+            
+            padding: 20px;
+            display: none;
+            width: 400px;
+            height: 300px;
+            position: relative;
+            left: 500px;
+            top: -200px;
+            background-image: url(blume2.jpg);
+            background-size: auto;
+            font-style: oblique;
+            text-align: justify;
+            font-size: 30px;
+            animation: scale;
+            animation-duration: 2s;
+            animation-delay: 3s;
+            background-repeat: no-repeat;
+            box-shadow: 10px 10px 0px #9999;
+            border-radius: 30px;
+            
+
+
+        }
+        @keyframes scale { from {transform: scale(0); opacity: 0;} to {transform: scale(1); opacity: 1}}
+        .button {
+    background-color: #008CBA; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    </style>
+
+</head>
+
+<body>
+    <div>
+        <img src="myphoto.jpeg" alt="<Mursal Baggash"><br>
+        <h3>Hallo, ich bin Herr Baggash </h3>
+
+
+    </div>
+    <button class="button" onclick="myFunction()">Click Me</button>
+    <div id="myDIV">
+
+
+
+
+
+
+
+        Vielen Danke, dass Sie mir die Gelegenheit beim DCI gegben haben!
+    </div>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myDIV");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
+
+
+
+
+</body>
+</html>
